@@ -1,0 +1,48 @@
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav__icon-envelope {
+  margin-right: 10px;
+}
+
+.auth-nav__link-icon {
+  fill: $primary-text-color;
+  display: flex;
+  align-items: center;
+
+  &:hover .auth-nav__icon-envelope {
+    fill: $accent-color;
+  }
+
+  &:hover .auth-nav__icon-smartphone {
+    fill: $accent-color;
+  }
+}
+
+.auth-nav__icon-smartphone {
+  margin-right: 10px;
+}
+
+.auth-nav__item:nth-child(-n + 2) {
+  margin-left: 50px;
+}
+
+.auth-nav__item:first-child {
+  margin-left: 0px;
+}
+
+.auth-nav__contact-link {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color $main-transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

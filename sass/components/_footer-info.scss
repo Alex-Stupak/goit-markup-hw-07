@@ -1,0 +1,36 @@
+.footer-background {
+  background-color: $background-color-hero;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  padding: 60px 0;
+}
+.logo__white {
+  color: $primary-white-color;
+}
+.removed-italics {
+  font-style: normal;
+}
+.mail-footer {
+  margin-top: 20px;
+}
+.footer-list__item:nth-child(-n + 3) {
+  padding-top: 10px;
+}
+.footer-list__item:first-child {
+  padding-top: 0;
+}
+.footer-list__contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $footer-text-contacts;
+  transition: color $main-transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

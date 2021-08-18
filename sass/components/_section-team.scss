@@ -1,0 +1,57 @@
+.team-background {
+  background-color: $button-background-color;
+}
+
+.team-list {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.team-list__item {
+  border-radius: 0px 0px 4px 4px;
+  background: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.section-card {
+  padding: 30px 0;
+}
+.section-card__section-people {
+  color: $title-text-color;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.section-card__section-profession {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list__item:nth-child(-n + 4) {
+  margin-left: 10px;
+}
+.social-list__item:first-child {
+  margin-left: 0;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $border-link;
+  transition: background-color $main-transition, fill $main-transition;
+
+  &:hover {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+  }
+}

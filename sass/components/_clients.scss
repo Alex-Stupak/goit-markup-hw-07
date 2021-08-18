@@ -1,0 +1,29 @@
+.title-margin {
+  margin-bottom: 50px;
+}
+.client-list {
+  display: flex;
+}
+.client-list__item:nth-child(-n + 6) {
+  margin-left: 30px;
+}
+.client-list__item:first-child {
+  margin-left: 0;
+}
+.client-list__link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid $border-link;
+  fill: $border-link;
+  transition: fill $main-transition;
+
+  &:hover {
+    fill: $accent-color;
+    border: solid 1px $accent-color;
+  }
+}
