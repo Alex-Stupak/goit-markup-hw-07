@@ -3,24 +3,24 @@
 }
 .work-list {
   display: flex;
-  margin-top: 50px;
   justify-content: space-between;
-}
-.work-list__thumb {
-  position: relative;
-  display: block;
-}
-.work-list__overlay {
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  bottom: 0;
-  left: 0;
-  color: $primary-white-color;
-  padding: 27px 0;
-  line-height: 1.14em;
-  text-align: center;
-  background: rgba(47, 48, 58, 0.8);
-  font-style: 14px;
-  font-weight: 700;
+
+  &__thumb {
+    position: relative;
+    display: block;
+  }
+  &__overlay {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    color: $primary-white-color;
+    padding: 27px 0;
+    line-height: 1.14em;
+    text-align: center;
+    background: rgba(47, 48, 58, 0.8);
+    font-style: 14px;
+    font-weight: 700;
+  }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #ffffff;
   color: #757575;
@@ -44,9 +45,17 @@ label {
   position: relative;
 }
 
+address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.blackish-blue-background {
+  background-color: #2f303a;
+}
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
 }
@@ -61,6 +70,60 @@ label {
   height: 80px;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header-line {
+  border-bottom: 1px solid #ececec;
+}
+
+.hero__primary-button, .label-list__submit-button {
+  border-radius: 4px;
+  padding: 10px 55px;
+  min-width: 200px;
+  border: none;
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.social-list__link, .social-list__link-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo {
   color: #212121;
   font-family: Raleway, cursive;
@@ -70,6 +133,10 @@ label {
 
 .logo__first-part {
   color: #2196f3;
+}
+
+.logo--white {
+  color: #ffffff;
 }
 
 .site-nav {
@@ -90,8 +157,7 @@ label {
 .site-nav__link {
   position: relative;
   display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0px;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -127,10 +193,6 @@ label {
   margin-left: auto;
 }
 
-.auth-nav__icon-envelope {
-  margin-right: 10px;
-}
-
 .auth-nav__link-icon {
   fill: #757575;
   display: -webkit-box;
@@ -147,6 +209,10 @@ label {
 
 .auth-nav__link-icon:hover .auth-nav__icon-smartphone {
   fill: #2196f3;
+}
+
+.auth-nav__icon-envelope {
+  margin-right: 10px;
 }
 
 .auth-nav__icon-smartphone {
@@ -173,10 +239,6 @@ label {
 
 .auth-nav__contact-link:hover, .auth-nav__contact-link:focus {
   color: #2196f3;
-}
-
-.header-line {
-  border-bottom: 1px solid #ececec;
 }
 
 .hero {
@@ -206,18 +268,7 @@ label {
 }
 
 .hero__primary-button {
-  border-radius: 4px;
   padding: 10px 32px;
-  min-width: 200px;
-  border: none;
-  color: #ffffff;
-  background-color: #2196f3;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
 }
 
 .hero__primary-button:hover {
@@ -232,7 +283,7 @@ label {
 
 .section__title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   color: #212121;
   font-weight: 700;
   font-size: 36px;
@@ -240,9 +291,10 @@ label {
   text-align: center;
 }
 
-.hidden__title {
+.hidden-title {
   visibility: hidden;
   font-size: 0;
+  margin-bottom: 0;
 }
 
 .features-list {
@@ -287,7 +339,6 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -313,7 +364,7 @@ label {
   font-weight: 700;
 }
 
-.team-background {
+.сement-background {
   background-color: #f5f4fa;
 }
 
@@ -321,7 +372,6 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -371,25 +421,16 @@ label {
   margin-left: 0;
 }
 
-.social-list-link {
+.social-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   fill: #afb1b8;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-link:hover {
+.social-list__link:hover {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -436,16 +477,10 @@ label {
 }
 
 .section-porfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px;
 }
 
-.section-porfolio__hidden-title {
-  visibility: hidden;
-  font-size: 0;
-}
-
-.flex-button {
+.button-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,15 +490,15 @@ label {
   padding-bottom: 50px;
 }
 
-.flex-button__list:nth-child(-n + 5) {
+.button-list__item:nth-child(-n + 5) {
   margin-left: 8px;
 }
 
-.flex-button__list:first-child {
+.button-list__item:first-child {
   margin-left: 0px;
 }
 
-.flex-button__porfolio {
+.button-list__button {
   border-radius: 4px;
   padding: 6px 22px;
   color: #212121;
@@ -482,7 +517,7 @@ label {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.flex-button__porfolio:focus, .flex-button__porfolio:hover {
+.button-list__button:focus, .button-list__button:hover {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -526,7 +561,7 @@ label {
   opacity: 1;
 }
 
-.portfolio-thumb {
+.portfolio-list__link .portfolio-list__thumb {
   position: relative;
   overflow: hidden;
 }
@@ -593,10 +628,6 @@ label {
   margin-bottom: 0px;
 }
 
-.footer-background {
-  background-color: #2f303a;
-}
-
 .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,18 +636,6 @@ label {
       -ms-flex-align: baseline;
           align-items: baseline;
   padding: 60px 0;
-}
-
-.logo__white {
-  color: #ffffff;
-}
-
-.removed-italics {
-  font-style: normal;
-}
-
-.mail-footer {
-  margin-top: 20px;
 }
 
 .footer-list__item:nth-child(-n + 3) {
@@ -669,25 +688,16 @@ label {
   display: flex;
 }
 
-.social-list__link {
+.social-list__link-footer {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   fill: #ffffff;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-list__link:hover {
+.social-list__link-footer:hover {
   background-color: #2196f3;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -697,13 +707,13 @@ label {
   margin-left: auto;
 }
 
-.mailing-flex {
+.subscription-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.mailing-flex__input {
+.subscription-form__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -717,11 +727,11 @@ label {
   color: #ffffff;
 }
 
-.button-mailing {
+.subscription-form__mailing {
   margin-left: 12px;
 }
 
-.button-mailing__flex {
+.subscription-form__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -730,32 +740,11 @@ label {
           align-items: center;
 }
 
-.button-mailing__icon {
+.subscription-form__icon {
   margin-left: 10px;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.backdrop__modal {
+.modal {
   position: absolute;
   padding: 40px;
   top: 50%;
@@ -774,7 +763,7 @@ label {
   border-radius: 4px;
 }
 
-.backdrop__icon-box {
+.modal__icon-box {
   position: absolute;
   top: 0;
   right: 0;
@@ -797,12 +786,12 @@ label {
   cursor: pointer;
 }
 
-.backdrop__icon-box:hover .backdrop__icon-close,
-.backdrop__icon-box:focus .backdrop__icon-close {
+.modal__icon-box:hover .modal__icon-close,
+.modal__icon-box:focus .modal__icon-close {
   fill: #2196f3;
 }
 
-.backdrop__icon-close {
+.modal__icon-close {
   width: 18px;
   height: 18px;
   fill: #000000;
@@ -810,7 +799,7 @@ label {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.title {
+.modal__title {
   color: #212121;
   font-size: 20px;
   font-weight: 700;
@@ -965,20 +954,6 @@ label {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 4px;
-  padding: 10px 55px;
-  min-width: 200px;
-  border: none;
-  color: #ffffff;
-  background-color: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
 }
 
 .label-list__submit-button:hover {

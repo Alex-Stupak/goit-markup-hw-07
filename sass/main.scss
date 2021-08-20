@@ -1,9 +1,10 @@
 @import "./utils/variables";
-@import "./components/main-nav";
+@import "./components/common";
+@import "./components/placeholder";
+@import "./components/mixin";
 @import "./components/logo";
 @import "./components/site-nav";
 @import "./components/auth-nav";
-@import "./components/page-header-portfolio";
 @import "./components/hero";
 @import "./components/section";
 @import "./components/section-work";
@@ -17,3 +18,4 @@
 @import "./components/footer-invite";
 @import "./components/footer-mailing";
 @import "./components/modal-window";
+@import "./components/label-window";
