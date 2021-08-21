@@ -7,13 +7,16 @@
   }
   &__item {
     position: relative;
+  }
 
-    &:focus .label-list__input,
-    &:hover .label-list__input {
+  &__input {
+    &:focus,
+    &:hover {
       border-color: $accent-color;
       outline: none;
     }
   }
+
   &__form {
     display: flex;
     flex-direction: column;

@@ -828,8 +828,7 @@ address {
   position: relative;
 }
 
-.label-list__item:focus .label-list__input,
-.label-list__item:hover .label-list__input {
+.label-list__input:focus, .label-list__input:hover {
   border-color: #2196f3;
   outline: none;
 }
