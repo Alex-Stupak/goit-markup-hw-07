@@ -1,4 +1,4 @@
-.auth-nav {
+.contact-link {
   display: flex;
   margin-left: auto;
 
@@ -7,21 +7,23 @@
     display: flex;
     align-items: center;
 
-    &:hover .auth-nav__icon-envelope {
+    &:hover .contact-link__icon-envelope {
       fill: $accent-color;
     }
 
-    &:hover .auth-nav__icon-smartphone {
+    &:hover .contact-link__icon-smartphone {
       fill: $accent-color;
     }
   }
 
   &__icon-envelope {
     margin-right: 10px;
+    transition: $main-transition;
   }
 
   &__icon-smartphone {
     margin-right: 10px;
+    transition: $main-transition;
   }
 
   &__item:nth-child(-n + 2) {
