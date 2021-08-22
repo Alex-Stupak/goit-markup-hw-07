@@ -28,8 +28,7 @@
     width: 30px;
     height: 30px;
     background-color: $primary-white-color;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    @include bordered(rgba(0, 0, 0, 0.1), 50%);
     cursor: pointer;
 
     &:hover .modal__icon-close,
@@ -42,14 +41,5 @@
     height: 18px;
     fill: $icon-close;
     transition: fill $main-transition;
-  }
-
-  &__title {
-    color: $title-text-color;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.15;
-    text-align: center;
-    margin-bottom: 12px;
   }
 }

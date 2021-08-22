@@ -422,45 +422,51 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-            <form class="js-speaker-form">
-                <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-                <div class="label-list">
-                    <label for="name" class="label-list__form label-list__item label-list__margin">
-                        <span class="label-list__span">Имя</span>
-                            <svg width="18" height="18" class="label-list__icon">
+            <form class="js-speaker-form form">
+                <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
+                <div>
+                    <label for="name" class="form__form form__margin">
+                        <span class="form__input-name">Имя</span>
+                        <div class="form__input-group-absolute">
+                            <svg width="18" height="18" class="form__input-icon">
                                 <use href="./images/sprite.svg#icon-name"></use>
                             </svg>
-                            <input type="text" name="name" id="name" class="label-list__input">
+                            <input type="text" name="name" id="name" class="form__input">
+                        </div>
                     </label>
                    
-                    <label for="tel" class="label-list__form  label-list__item label-list__margin">
-                        <span class="label-list__span">Телефон</span>
-                            <svg width="18" height="18" class="label-list__icon">
+                    <label for="tel" class="form__form form__margin">
+                        <span class="form__input-name">Телефон</span>
+                        <div class="form__input-group-absolute">
+                            <svg width="18" height="18" class="form__input-icon">
                                 <use href="./images/sprite.svg#icon-phone"></use>
                             </svg>
-                            <input type="tel" name="tel" id="tel" class="label-list__input">
+                            <input type="tel" name="tel" id="tel" class="form__input">
+                        </div>
                     </label>
 
-                    <label for="mail" class="label-list__form  label-list__item label-list__margin">
-                        <span class="label-list__span">Почта</span>
-                            <svg width="18" height="18" class="label-list__icon">
+                    <label for="mail" class="form__form form__margin">
+                        <span class="form__input-name">Почта</span>
+                        <div class="form__input-group-absolute">
+                            <svg width="18" height="18" class="form__input-icon">
                                 <use href="./images/sprite.svg#icon-mail"></use>
                             </svg>
-                            <input type="email" name="mail" id="mail" class="label-list__input">
+                            <input type="email" name="mail" id="mail" class="form__input">
+                        </div>
                     </label>
 
-                    <label for="comment" class="label-list__form  label-list__margin">
-                        <span class="label-list__span">Комментарий</span>
-                            <textarea name="comment" id="comment" placeholder="Введите текст" class="label-list__comment"></textarea>
+                    <label for="comment" class="form__form  form__margin">
+                        <span class="form__input-name">Комментарий</span>
+                            <textarea name="comment" id="comment" placeholder="Введите текст" class="form__comment"></textarea>
                     </label>
 
-                    <label class="label-list__label">
-                        <input type="checkbox" class="label-list__checkbox">
-                        <span class="label-list__border-icon"></span>
-                    <span class="label-list__accept">Соглашаюсь с рассылкой и принимаю</span><a href="" class="label-list__policy-link label-list__accept">Условия договора</a>
+                    <label class="form__label">
+                        <input type="checkbox" class="form__checkbox">
+                        <span class="form__border-icon"></span>
+                    <span class="form__accept">Соглашаюсь с рассылкой и принимаю</span><a href="" class="form__policy-link form__accept">Условия договора</a>
                     </label>
                 </div>
-                    <button type="submit" class="label-list__submit-button">Отправить</button>
+                    <button type="submit" class="form__submit-button">Отправить</button>
 
 
             </form>
