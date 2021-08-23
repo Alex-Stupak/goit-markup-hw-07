@@ -825,7 +825,7 @@ address {
   outline: none;
 }
 
-.form__form {
+.form__label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,38 +835,38 @@ address {
           flex-direction: column;
 }
 
-.form__form:focus-within .form__input-icon {
+.form__label:focus-within .form__input-icon {
   fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__form:focus .form__input-icon,
-.form__form:hover .form__input-icon {
+.form__label:focus .form__input-icon,
+.form__label:hover .form__input-icon {
   fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__form:focus .form__input,
-.form__form:hover .form__input {
+.form__label:focus .form__input,
+.form__label:hover .form__input {
   border-color: #2196f3;
   outline: none;
 }
 
-.form__form textarea::-webkit-input-placeholder {
+.form__label textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form__form textarea:-ms-input-placeholder {
+.form__label textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form__form textarea::-ms-input-placeholder {
+.form__label textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form__form textarea::placeholder {
+.form__label textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -959,7 +959,7 @@ address {
   background-origin: border-box;
 }
 
-.form__label {
+.form__label-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

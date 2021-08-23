@@ -23,7 +23,7 @@
     }
   }
 
-  &__form {
+  &__label {
     display: flex;
     flex-direction: column;
 
@@ -45,7 +45,7 @@
     }
   }
 
-  &__form textarea::placeholder {
+  &__label textarea::placeholder {
     color: $placeholder;
   }
 
@@ -134,7 +134,7 @@
       background-origin: border-box;
     }
   }
-  &__label {
+  &__label-button {
     display: flex;
     align-items: center;
     justify-content: center;
